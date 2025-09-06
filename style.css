@@ -1,7 +1,19 @@
 body {
-    background-color: #7d7cdb; /* You can use hex, rgb, or color names */
+  background-color: #7f6adfb3; /* You can use hex, rgb, or color names */
 }
 td {
-    text-align: center;
-
+  text-align: center;
+}
+a {
+  text-decoration: none;
+  display: block;
+  text-align: center;
+}
+table ,th,td {
+  border: 2px solid blue;
+  border-collapse: collapse;
+}
+table {
+  width: 500px;
+  height: 200px;
 }
