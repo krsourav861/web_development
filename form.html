@@ -4,11 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Story+Script&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
    <form action="">
-    <p><h1>University Registration Form</h1></p>
+    <p><h1 class="heading">University Registration Form</h1></p>
     <p>Please fill out the form to tegister.</p>
     <hr>
     <h2>Personal Details</h2>
@@ -19,27 +22,72 @@
     <input type="text" name="surname" id="surname">
     <br><br>
     <label for="DOB">Date of Birth:</label>
-    <input type="date" name="Date of Birth" id="DOB">
+    <input type="date" name="DOB" id="DOB">
     <br><br>
-    Gender:
-    <br>
+   <h3> Gender:</h3>
     <label for="male">Male:</label>
-    <input type="radio" name="gender" id="male">
+    <input type="radio" name="gender" id="male" value="Male">
     <br>
     <label for="fmale">Female:</label>
-    <input type="radio" name="gender" id="fmale">
+    <input type="radio" name="gender" id="fmale" value="Female">
     <br>
     <label for="other">Other:</label>
-    <input type="radio" name="gender" id="other">
+    <input type="radio" name="gender" id="other" value="Other">
     <br><br>
-    <label for="photo">Upload your photo:</label>
-    <br>
+    <label for="photo"><h3>Upload your photo:</h3></label>
 <input type="file" name="photo" id="photo">
 <hr>
 <p><h2>contact information</h2></p>
 <br>
 <label for="email">Email Address:</label>
 <input type="email" name="email" id="email">
+<br><br>
+<label for="tel">Phone Number:</label>
+<input type="tel" name="phone" id="tel">
+<br><br>                
+<label for="address">Mailing Address:</label>
+<br>
+<Textarea name="address" id="address" rows="04" cols="20"></Textarea>
+<hr>
+<h2>Academic Information</h2>
+<label for="select">Select Your course:</label>
+<select name="select" id="select">
+<option value="CSE">computer science E</option>
+<option value="CE">civil E</option>
+<option value="ME">Machenical E</option>
+</select>
+<p>Extracurricular Interest:</P>
+    <input type="checkbox" name="Interest" id="Sports" value="Sports">
+    <label for="Sports">Sports</label>
+    <br>
+    <input type="checkbox" name="Interest" id="Music" value="Music & Arts">
+    <label for="Music">Music & Arts</label>
+    <br>
+    <input type="checkbox" name="Interest" id="Clubs" value="Technology Clubs">
+    <label for="Clubs">Technology Clubs</label>
+    <br>
+    <input type="checkbox" name="Interest" id="Vol" value="Volunteering">
+    <label for="Vol">Volunteering</label>
+    <hr>
+    <p><h2>Create Your Account</h2></p>
+    <label for="pass">Create Your Password:</label>
+    <input type="password" name="password" id="pass">
+    <br><br>
+    <label for="seq">Security Question:</label>
+    <select name="" id="">
+        <option value="Father Name">Your Father Name:</option>
+        <option value="Friend Name">Your Friend Name:</option>
+        <option value="Nickname">Your Nickname:</option>
+    </select>
+    <br><br>
+<label for="secu">Security Answer:</label>
+<input type="text" name="security" id="secu">
+<br><br>
+<input type="checkbox" name="checkbox" id="check" required>
+<label for="check" re>I agree to the terms and conditions</label>
+<br><input type="submit">
+<button type="submit">Register</button>
+<button type="reset">Clear Form</button>
    </form>
    <a href="form2.html">second form</a> 
 </body>
